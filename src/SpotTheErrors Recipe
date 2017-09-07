@@ -1,5 +1,10 @@
+/*******************************************************************************
+ *	Spot the errors
 
-//Find the errors in this code without getting help from Eclipse
+ *    Copyright (c) The League of Amazing Programmers 2013-2017
+ *    Level 0
+ 
+ Find the errors in this code without getting help from Eclipse
 
 
 String repeat = JOptionPain.showInput_("how many Beullers?");		
@@ -19,3 +24,5 @@ JOptionPane.showMassageDialog(nil, "There's a lot of broken glass out here");
 
 
 What is the output from the correct code??
+
+*/
