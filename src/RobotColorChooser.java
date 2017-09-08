@@ -2,9 +2,6 @@
 *    Level 0
 */
 
-
-import javax.swing.JOptionPane;
-
 import org.jointheleague.graphical.robot.Robot;
 
 import java.awt.Color;
