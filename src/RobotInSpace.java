@@ -12,8 +12,7 @@
 	import javax.sound.sampled.AudioSystem; 
 	import javax.sound.sampled.Clip;
 
-import org.jointheleague.graphical.robot.Robot;
-
+    import org.jointheleague.graphical.robot.Robot;
 	
 	public class RobotInSpace implements KeyEventDispatcher {
 		
@@ -68,14 +67,13 @@ import org.jointheleague.graphical.robot.Robot;
 	public void playEureka() {
 	    System.out.println("EUREKA!");
 	    try {
-	        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(
-	                "/Users/League/Google Drive/league-sounds/r2d2-eureka.wav"));
-	        Clip clip = AudioSystem.getClip();
-	        clip.open(audioInputStream);
-	        clip.start();
-	    } catch (Exception ex) {
-	        ex.printStackTrace();
-	    }
+	   		 Clip clip = AudioSystem.getClip();
+	   		 clip.open(AudioSystem.getAudioInputStream(RobotInSpace.class.getResource("r2d2-eureka.wav")));
+	   		 clip.start();
+	   		 Thread.sleep(6000);
+	   	} catch (Exception ex) {
+	     	ex.printStackTrace();
+	   	}
 	}
 	}
 
