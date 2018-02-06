@@ -45,7 +45,6 @@ import org.jointheleague.graphical.robot.Robot;
 	}
 
 	public static void main(String[] args) {
-		new RobotInSpace().playEureka();
 	    new RobotInSpace().controlTheRobot();
 	}
 
