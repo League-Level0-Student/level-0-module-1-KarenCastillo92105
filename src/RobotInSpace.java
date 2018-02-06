@@ -1,7 +1,3 @@
-/*
- *    Copyright (c) The League of Amazing Programmers 2013-2017
- *    Level 0
- */
 
 
 	import java.awt.KeyEventDispatcher; 
@@ -12,25 +8,32 @@
 	import javax.sound.sampled.AudioSystem; 
 	import javax.sound.sampled.Clip;
 
-    import org.jointheleague.graphical.robot.Robot;
+import org.jointheleague.graphical.robot.Robot;
+
 	
 	public class RobotInSpace implements KeyEventDispatcher {
 		
 	Robot rob = new Robot("mini");
+	
+	/*  
+	  Make the Robot move around the screen when the arrow keys are pressed... 
+	  
+	 1. IMPORTANT: For this recipe, use rob.microMove(distance) to move your Robot and rob.setAngle(angle) to change the direction of your Robot.
+	  
+	 */
 
-	/*  Make the Robot move around the screen when the arrow keys are pressed... */
 	private void moveRobot(int keyPressed) {
-	    // 0. Print out the keyPressed variable and write down the numbers for each arrow key
+	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
 
-	    // 1. If the up arrow is pressed, move the Robot up the screen.
+	    // 3. If the up arrow is pressed, move the Robot up the screen.
 
-	    // 2. If the down arrow is pressed, move the Robot down.
+	    // 4. If the down arrow is pressed, move the Robot down.
 
-	    // 3. If the left arrow is pressed, make the Robot go left. Hint: Make sure to end with the Robot facing UP.
+	    // 5. If the left arrow is pressed, make the Robot go left.
+	   
+	    // 6. If right is pressed, move the Robot right.
 	    
-	    // 4. If right is pressed, move the Robot right.
-	    
-	    // 5. Then move the Robot to RD-2D for a surprise! 
+	    // 7. Run your program and move the Robot to RD-2D for a surprise! 
 	}
 
 	private void checkIfR2D2Found() throws Exception {
@@ -42,6 +45,7 @@
 	}
 
 	public static void main(String[] args) {
+		new RobotInSpace().playEureka();
 	    new RobotInSpace().controlTheRobot();
 	}
 
@@ -67,13 +71,13 @@
 	public void playEureka() {
 	    System.out.println("EUREKA!");
 	    try {
-	   		 Clip clip = AudioSystem.getClip();
-	   		 clip.open(AudioSystem.getAudioInputStream(RobotInSpace.class.getResource("r2d2-eureka.wav")));
-	   		 clip.start();
-	   		 Thread.sleep(6000);
-	   	} catch (Exception ex) {
-	     	ex.printStackTrace();
-	   	}
+	        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/r2d2-eureka.wav"));
+	        Clip clip = AudioSystem.getClip();
+	        clip.open(audioInputStream);
+	        clip.start();
+	    } catch (Exception ex) {
+	        ex.printStackTrace();
+	    }
 	}
 	}
 
