@@ -19,14 +19,14 @@ import org.jointheleague.graphical.robot.Robot;
 	  Make the Robot move around the screen when the arrow keys are pressed... 
 	  
 	 1. IMPORTANT: For this recipe, use rob.microMove(distance) to move your Robot and rob.setAngle(angle) to change the direction of your Robot.
-	  
+	  	//Do not add code here - go to step 2
 	 */
 
-	private void moveRobot(int keyPressed) {
+	private void moveRobot(int keyPressed) throws InterruptedException {
 	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
 
 	    // 3. If the up arrow is pressed, move the Robot up the screen.
-
+		
 	    // 4. If the down arrow is pressed, move the Robot down.
 
 	    // 5. If the left arrow is pressed, make the Robot go left.
@@ -58,7 +58,12 @@ import org.jointheleague.graphical.robot.Robot;
 
 	public boolean dispatchKeyEvent(KeyEvent e) {
 	    if (e.getID() == KeyEvent.KEY_PRESSED) {
-	        moveRobot(e.getKeyCode());
+	        try {
+				moveRobot(e.getKeyCode());
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 	        try {
 	            checkIfR2D2Found();
 	        } catch (Exception exception) {
