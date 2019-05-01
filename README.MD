@@ -11,3 +11,5 @@ At the end of this module, students will be able to:
   * Use int variables in simple math statements
   * Know where curly brackets {} are required in a simple program
   * Draw simple graphics using Processing
+  
+ (c) The League of Amazing Programmers
