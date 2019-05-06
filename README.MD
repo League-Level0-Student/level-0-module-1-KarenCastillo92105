@@ -12,4 +12,3 @@ At the end of this module, students will be able to:
   * Know where curly brackets {} are required in a simple program
   * Draw simple graphics using Processing
   
- (c) The League of Amazing Programmers
