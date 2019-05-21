@@ -1,5 +1,5 @@
-package ifs_ints_and_loops;
-//    Copyright (c) The League of Amazing Programmers 2013-2017
+package _07_riddler;
+//    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
 

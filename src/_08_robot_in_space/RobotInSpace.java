@@ -1,4 +1,8 @@
-package ifs_ints_and_loops;
+//    Copyright (c) The League of Amazing Programmers 2013-2019
+//    Level 0
+
+
+package _08_robot_in_space;
 
 import java.applet.AudioClip;
 import java.awt.KeyEventDispatcher;
