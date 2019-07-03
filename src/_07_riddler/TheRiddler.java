@@ -29,6 +29,7 @@ else {
 String Answer2 = JOptionPane.showInputDialog(null,"What has a head and a tail, but no body?");
 if (Answer2.equals("A Coin")) {
 	JOptionPane.showMessageDialog(null, "Correct!");
+	Score++;
 }
 else {
 	JOptionPane.showMessageDialog(null, "Wrong!");
